@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://ns.adobe.com/air/application/3.1">
+    <id>Jeddychan.AXGL_App</id>
+    <versionNumber>1.0</versionNumber>
+    <filename>AXGL_App</filename>
+	<name>AXGL_App</name>
+    <initialWindow>
+		<renderMode>direct</renderMode>
+        <content>deploy/AXGL_App.swf</content>
+        <visible>true</visible>
+        <resizable>false</resizable>
+		<maximizable>false</maximizable>
+        <transparent>false</transparent>
+        <width>1024</width>
+        <height>768</height>
+    </initialWindow>
+    <icon>
+		<image48x48>deploy/iosImages/icons/icon48.png</image48x48>
+	</icon>
+</application>
