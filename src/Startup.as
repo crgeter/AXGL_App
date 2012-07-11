@@ -1,6 +1,6 @@
 package {
-	import net.axgl.star.state.TitleState;
 
+	import org.Jeddychan.Splash;
 	import org.axgl.Ax;
 
 	[SWF(width = "400", height = "600", backgroundColor = "#000000")]
@@ -10,7 +10,7 @@ package {
 			
 			//TitleState is the first state that the game starts on.
 			//Startup.as just sets a few constants and then starts the game.
-			super(TitleState);
+			super(Splash);
 		}
 		
 		override public function create():void {

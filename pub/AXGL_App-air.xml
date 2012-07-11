@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application xmlns="http://ns.adobe.com/air/application/3.1">
-    <id>Jeddychan.AXGL_App</id>
+    <id>Jeddychan.AXGL-App</id>
     <versionNumber>1.0</versionNumber>
     <filename>AXGL_App</filename>
 	<name>AXGL_App</name>

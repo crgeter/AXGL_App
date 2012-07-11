@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="AXGL_App" default="build" basedir="./">
+<project name="AXGL-App" default="build" basedir="./">
 	<property file="c:/certs/my.build.properties"/> <!-- can't get certs.dir to work here -->
 	<property file="${os.name}.build.properties"/>
 	<property file="build.properties"/>
