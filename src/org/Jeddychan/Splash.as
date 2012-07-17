@@ -6,17 +6,34 @@ package org.Jeddychan
 	 */
 	
 	 
-	 import org.axgl.AxState;
+	import org.axgl.AxSprite;
+
+	
 	 
-	 
-	public class Splash extends AxState {
-        override public function create():void {
-            super.create();
-            trace("Splash Created");
+	public class Splash extends AxSprite
+	{
+		
+		var timeout:Number;
+		var duration:Number = 150;
+		
+        
+		override public function create():void 
+		{
+			timeout = 0
+			
         }
         
-        override public function update():void {
-            super.update();
+        override public function update():void 
+		{
+			timeout += 1;
+			
+			if (timeout > duration)
+			{
+				remove this;
+			}
         }
+		
+		
 	}
+	
 }

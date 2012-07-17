@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+
+	<splash id="Intro" x="64" y="64">
+		<screen id="White1" value="screen1" height="64" width="128" type="Color" fade="false" duration="2" source="#FFFFFF"></screen>
+		<screen id="Black1" value="screen2" height="64" width="128" type="Color" fade="true" duration="2" source="#000000"></screen>
+		<screen id="White2" value="screen3" height="64" width="128" type="Color" fade="true" duration="2" source="#FFFFFF"></screen>
+	</splash>
+
+	
+</data>
