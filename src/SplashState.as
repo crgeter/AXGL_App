@@ -25,6 +25,18 @@ package {
 		
 		private var ElapsedTime:Number = 0;
 		
+		private var check1a:Number = 0;
+		private var check1b:Number = check1a + fade1;
+		
+		private var check2a:Number = fade1 + duration1;
+		private var check2b:Number = check2a + fade2;
+		
+		private var check3a:Number = check2b + duration2;
+		private var check3b:Number = check3a + fade3;
+		
+		private var check4a:Number = check3b + duration3;
+		
+		
 		override public function create():void {
 			super.create();
 		
@@ -62,6 +74,21 @@ package {
 			
 			ElapsedTime += 1 * Ax.dt;
 			
+			
+			if (ElapsedTime > check1a && ElapsedTime < check1b)
+			{Splash1.alpha = (ElapsedTime - check1a) / fade1 }
+		
+			if (ElapsedTime > check2a && ElapsedTime < check2b)
+			{Splash2.alpha = (ElapsedTime - check2a) / fade2 }
+		
+			if (ElapsedTime > check3a && ElapsedTime < check3b)
+			{Splash3.alpha = (ElapsedTime - check3a) / fade3 }
+		
+			if (ElapsedTime > fade1 + duration1 + fade2 + duration2 + fade3 + duration3)
+			{Ax.switchState(new GameState); }
+			
+			
+			/*
 			if (ElapsedTime > 0 && ElapsedTime < fade1)
 			{Splash1.alpha = ElapsedTime / fade1 }
 			if (ElapsedTime > fade1 + duration1 && ElapsedTime < fade1 + duration1 + fade2)
@@ -70,6 +97,7 @@ package {
 			{Splash3.alpha = (ElapsedTime - (fade1 + duration1 + fade2 + duration2)) / fade3 }
 			if (ElapsedTime > fade1 + duration1 + fade2 + duration2 + fade3 + duration3)
 			{Ax.switchState(new GameState); }
+			*/
 			
 			
 			super.update();
